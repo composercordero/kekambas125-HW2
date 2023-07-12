@@ -27,7 +27,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 30vw;
+    width: 40vw;
     color: var(--darkgray);
 }
 
@@ -50,20 +50,14 @@ a:hover{
     padding: 40px;
 }
 
+label{
+    font-weight: 600;
+}
+
 input{
     width: 100%;
     margin-bottom: 20px;
 }
-
-[type="button"]{
-    border: 1px solid var(--darkgray);
-    padding: 5px 0;
-}
-
-[type="button"]:hover{
-    filter: brightness(1.05)
-}
-
 
 .password{
     display: flex;
@@ -85,6 +79,12 @@ input{
 button{
     width: 100%;
     padding: 5px 0;
+    border: 1px solid var(--darkgray);
+    padding: 5px 0;
+}
+
+button:hover{
+    filter: brightness(1.05)
 }
 
 .over{
@@ -99,6 +99,14 @@ button{
     flex: 1 1;
     border-bottom: 1px solid var(--lightgray);
     margin: auto;
+}
+
+.existing{
+    margin: 20px 40px;
+}
+
+.existing p{
+    margin: 10px 0;
 }
 
 footer{

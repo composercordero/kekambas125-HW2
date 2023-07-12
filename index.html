@@ -22,11 +22,17 @@
 
             <form action="">
                 <label for="user">Email or mobile phone number</label>
-                <input type="email" name="email" id="user">
-                <div class="password"><label for="password">Password</label>
-                <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GH3NM2YWEFEL2CQ4" class="password">Forgot your Password?</a></div>
-                <input type="password" name="password" id="password">
-                <input class="yellow" type="button" onclick="window.location.href='account.html';" value="Continue">
+                <input type="email" name="email" id="user" class="formInput">
+                
+                <div class="password">
+                    <label for="password">Password</label>
+
+                    <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GH3NM2YWEFEL2CQ4" class="password">Forgot your Password?</a>
+                </div>
+
+                <input type="password" name="password" id="password" class="formInput">
+
+                <button class="yellow" id="signIn">Continue</button>
             </form>
 
             
@@ -35,7 +41,7 @@
         <div class="new">
             <p class="over">New to Amazon?</p>
         
-            <button>Create an account</button>
+            <button type="button" onclick="window.location.href='account.html';" value="Continue">Create an account</button>
             <p>By signing in you are agreeing to our <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088&ref_=footer_cou">Conditions of Use and Sale</a> and out <a href="https://www.amazon.com/hz/contact-us/foresight/hubgateway">Privacy Notice.</a></p>
         </div>
        <footer>

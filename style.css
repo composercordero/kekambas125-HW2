@@ -5,6 +5,10 @@
     --lightblue: #427be4;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 * { 
     /* border: red solid 1px; */
     box-sizing: border-box;
@@ -20,11 +24,12 @@ a {
     flex-direction: column;
     margin: auto;
     width: 30vw;
+    color: var(--darkgray);
 }
 
 .logo{
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     display:flex;
     justify-content: center;
     align-content: center;
@@ -37,12 +42,18 @@ a {
 
 .box{
     border: 1px solid var(--lightgray);
-    padding: 10px 40px;
+    padding: 0 40px;
+    padding: 40px;
 }
 
 input{
     width: 100%;
     margin-bottom: 20px;
+}
+
+[type="button"]{
+    border: 1px solid var(--darkgray);
+    padding: 5px 0;
 }
 
 .password{
@@ -52,11 +63,19 @@ input{
 
 .yellow{
     background-color: var(--yellow);
+    border: 1 px solid black;
+    margin-bottom: 0;
 }
 
-hr{
-    border: 1px solid var(--lightgray);
+.new {
+    padding: 0 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
 
+button{
+    width: 100%;
+    padding: 5px 0;
 }
 
 .over{
@@ -74,5 +93,17 @@ hr{
 }
 
 footer{
-    border-top: 1px solid var(--darkgray);
+    border-top: 1px solid var(--lightgray);
+    padding-top: 40px;
+    text-align: center;
+    color: var(--darkgray);
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 20px 9999rem;
+}
+
+.links{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
 }
